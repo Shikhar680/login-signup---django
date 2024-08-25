@@ -1,0 +1,59 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: neu;
+}
+#page{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2.2vw;
+}
+
+#nav{
+    padding: 2.5vw 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav_buttons{
+    display: flex;
+    align-items: center;
+    gap:1vw;
+}
+#nav_buttons h4{
+    padding: 10px 20px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 50px;
+    font-weight: 500;
+    color:rgb(37, 37, 37);
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+}
+#nav_buttons h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left:0;
+    bottom:-100%;
+    border-radius: 100%;
+    transition: all ease 0.5s;
+}
+#nav_buttons h4:hover::after{
+    bottom:0%;
+    border-radius: 0;
+}
+#nav_buttons h4 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+#nav_buttons h4:hover a{
+    color: white;
+}

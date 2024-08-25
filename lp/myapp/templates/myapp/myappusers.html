@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    {% for i in all_users %}
+    <div>
+        name: {{i.name}} <br>
+        username: {{i.username}} <br>
+        email: {{i.email}} <br><br>
+    </div>
+    {% endfor %}
+</body>
+</html>
